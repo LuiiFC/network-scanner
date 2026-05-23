@@ -1,34 +1,24 @@
-# Network Scanner - Cybersecurity Portfolio Project
+# 🔍 Network Scanner
 
-A Python network scanner built for an isolated VirtualBox lab environment.
+Scanner de rede em Python construído em um ambiente de laboratório isolado no VirtualBox como projeto de portfólio de cibersegurança júnior.
 
-## Features
-- Host discovery via ping sweep
-- Port scanning with service detection
-- Banner grabbing
-- JSON and TXT report generation
+## ✨ Funcionalidades
+- Descoberta de hosts via ping sweep
+- Escaneamento de portas TCP com detecção de serviços
+- Banner grabbing (versões dos serviços)
+- Geração automática de relatórios em JSON e TXT
 
-## Lab Environment
-- Attacker: Kali Linux 2025.2 (VirtualBox)
-- Target: Metasploitable 2 (VirtualBox)
-- Network: Host-Only Adapter (isolated)
+## 🖥️ Ambiente de Laboratório
+| Máquina | Sistema | IP |
+|---|---|---|
+| Atacante | Kali Linux 2025.2 | 192.168.56.105 |
+| Alvo | Metasploitable 2 | 192.168.56.106 |
+| Rede | Host-Only Adapter (isolada) | 192.168.56.0/24 |
 
-## Usage
+## 🚀 Como usar
 ```bash
-# Scan entire network
-sudo python3 scanner.py
-
-# Scan specific target
 sudo python3 scanner.py -t 192.168.56.106
-
-# Custom port range
-sudo python3 scanner.py -t 192.168.56.106 -p 1-65535
 ```
 
-## Requirements
-- Python 3
-- python-nmap
-- nmap
-
-## Disclaimer
-For educational use only in isolated lab environments.
+## ⚠️ Aviso
+Apenas para uso educacional em ambientes de laboratório isolados. Nunca utilize em sistemas sem autorização.
